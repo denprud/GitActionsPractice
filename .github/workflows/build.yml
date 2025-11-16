@@ -6,6 +6,8 @@ jobs:
      steps:
        - name: Add Respository
          uses: actions/checkout@v3
+       - name: Install Vitest
+         run: npm i eslint
        - name: Call Lint Command
          run: npm run lint
          working-directory: 04 Practice Project (Start)
@@ -14,6 +16,8 @@ jobs:
      steps:
        - name: Add Respository
          uses: actions/checkout@v3
+       - name: Install Vitest
+         run: npm i vitest
        - name: Call Test Command
          run: npm run test
          working-directory: 04 Practice Project (Start)
