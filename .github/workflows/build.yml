@@ -8,7 +8,7 @@ jobs:
          uses: actions/checkout@v3
        - name: Call Lint Command
          run: npm lint
-         working-directory: 04 Practice Project (Start)/node_modules
+         working-directory: 04 Practice Project (Start)
    test:
      runs-on: ubuntu-latest
      steps:
@@ -16,7 +16,7 @@ jobs:
          uses: actions/checkout@v3
        - name: Call Test Command
          run: npm test
-         working-directory: 04 Practice Project (Start)/node_modules
+         working-directory: 04 Practice Project (Start)
    build:
      needs: test
      runs-on: ubuntu-latest
@@ -25,4 +25,4 @@ jobs:
          uses: actions/checkout@v3
        - name: Call Build Command
          run: npm build
-         working-directory: 04 Practice Project (Start)/node_modules
+         working-directory: 04 Practice Project (Start)
