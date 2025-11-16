@@ -7,7 +7,7 @@ jobs:
        - name: Add Respository
          uses: actions/checkout@v3
        - name: Call Lint Command
-         run: npm lint
+         run: npm run lint
          working-directory: 04 Practice Project (Start)
    test:
      runs-on: ubuntu-latest
@@ -15,7 +15,7 @@ jobs:
        - name: Add Respository
          uses: actions/checkout@v3
        - name: Call Test Command
-         run: npm test
+         run: npm run test
          working-directory: 04 Practice Project (Start)
    build:
      needs: test
@@ -24,5 +24,5 @@ jobs:
        - name: Add Respository
          uses: actions/checkout@v3
        - name: Call Build Command
-         run: npm build
+         run: npm run build
          working-directory: 04 Practice Project (Start)
